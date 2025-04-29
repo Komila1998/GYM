@@ -25,7 +25,7 @@ const createSchedule = async (req, res) => {
           isActive: true
         });
       }
-    }
+    }//
 
     // Validate at least one day is selected
     if (daySchedules.size === 0) {
