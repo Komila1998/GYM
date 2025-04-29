@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import DaySchedulesTable from "./DaySchedulesTable";
+import DaySchedulesTable from "./DaySchedulesTable";//
 import '../CSS/daySchedule.css';
 
 import jsPDF from 'jspdf';
@@ -27,7 +27,7 @@ const ManageSchedules = () => {
 
     if(userRole === 'USER'){
       getSchedules();
-    }else{
+    }else{//
       getAllSchedules();
     }
 
