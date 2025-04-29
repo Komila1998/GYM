@@ -10,7 +10,7 @@ const getAllUsers = async (req, res) => {
         res.status(500).json({ message: "Server error", error });
     }
 }
-
+//
 const getUserCount = async (req, res) => {
     try {
       const count = await User.countDocuments({ role: "USER" });
