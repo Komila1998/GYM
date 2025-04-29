@@ -100,7 +100,7 @@ const getNames = async (req, res) => {
     }
 
 }
-
+//
 const getTrainerCount = async (req, res) => {
     try {
       const count = await Trainer.countDocuments(); 
