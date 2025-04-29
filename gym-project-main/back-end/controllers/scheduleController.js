@@ -10,7 +10,7 @@ const createSchedule = async (req, res) => {
       return res.status(400).json({ error: 'End date must be after start date' });
     }
 
-    const daySchedules = new Map();
+    const daySchedules = new Map();//
     for (const [day, time] of Object.entries(schedules)) {
       if (time.startTime && time.endTime) {
         if (time.startTime >= time.endTime) {
