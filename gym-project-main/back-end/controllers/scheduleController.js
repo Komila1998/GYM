@@ -59,7 +59,7 @@ const createSchedule = async (req, res) => {
     res.status(500).json({ error: 'Server error while creating schedule' });
   }
 };
-
+//
 const getAllSchedulesByAdmin = async (req, res) => {
   try {
     const schedules = await Schedule.find()
