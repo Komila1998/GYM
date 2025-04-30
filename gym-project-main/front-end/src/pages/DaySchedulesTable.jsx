@@ -6,13 +6,13 @@ const DaySchedulesTable = ({ daySchedules, onClose, getAllSchedules }) => {
   // Convert the daySchedules object to an array of entries
   const scheduleEntries = Object.entries(daySchedules || {});
   const token = localStorage.getItem('token');
-
+//
   const toggleStatus = async (_id) => {
     try {
       // Find the day and schedule with the matching _id
       console.log("the id is", _id)
       const [dayKey, scheduleToUpdate] = Object.entries(daySchedules).find(
-        ([, schedule]) => schedule._id === _id
+        ([, schedule]) => schedule._id === _id //
       );
   
       if (!scheduleToUpdate) return;
