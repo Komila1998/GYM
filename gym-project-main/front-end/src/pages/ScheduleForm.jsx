@@ -163,7 +163,7 @@ const ScheduleForm = () => {
     if (!classType) newErrors.classType = "Class type is required"; 
     if (!membershipName) newErrors.membershipName = "Membership Name  is required"; 
     if (!trainer) newErrors.trainer = "Trainer Name  is required"; 
-
+//add validate
     if (startDate && endDate && new Date(startDate) > new Date(endDate)) {
       newErrors.dateRange = "End date must be after start date";
     }
