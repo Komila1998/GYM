@@ -30,7 +30,7 @@ const createTrainer = async (req, res) => {
         res.status(500).json({ message: "Server Error" });
     }
 };
-
+//
 const getAllTrainersData = async (req, res) => {
     try {
       const trainers = await Trainer.find(); // This retrieves all trainer documents
@@ -86,7 +86,7 @@ const dalateTrainer = async (req, res) => {
         res.status(500).json({ message: "Server Error" });
     }
 };
-
+//
 
 const getNames = async (req, res) => {
     try {
@@ -100,7 +100,7 @@ const getNames = async (req, res) => {
     }
 
 }
-
+//
 const getTrainerCount = async (req, res) => {
     try {
       const count = await Trainer.countDocuments(); 

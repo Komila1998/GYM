@@ -155,10 +155,11 @@ const deleteMembership = async (req, res) => {
     } catch (error) {
       res.status(500).json({
         message: "Server error",
-        error: error.message
+        error: error.message  //
       });
     }
   };
+  //
 
   const getMembershipCount = async (req, res) => {
       try {
@@ -173,6 +174,6 @@ const deleteMembership = async (req, res) => {
       }
     };
 
-
+//
 
 module.exports = { createMemberShip, getAllMembership, updateMembership, deleteMembership, getAllMembershipNames, getMembershipCount };

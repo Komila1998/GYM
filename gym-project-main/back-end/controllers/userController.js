@@ -10,7 +10,7 @@ const getAllUsers = async (req, res) => {
         res.status(500).json({ message: "Server error", error });
     }
 }
-
+//
 const getUserCount = async (req, res) => {
     try {
       const count = await User.countDocuments({ role: "USER" });
@@ -23,7 +23,7 @@ const getUserCount = async (req, res) => {
       res.status(500).json({ message: "Server error", error });
     }
   };
-
+//
   const dalateUser = async (req, res) => {
       try {
           const deletedUser = await User.findByIdAndDelete(req.params.id);
@@ -38,7 +38,7 @@ const getUserCount = async (req, res) => {
           res.status(500).json({ message: "Server Error" });
       }
   };
-  
+  //
   module.exports = { 
     getAllUsers, 
     getUserCount,

@@ -10,7 +10,7 @@ const createSchedule = async (req, res) => {
       return res.status(400).json({ error: 'End date must be after start date' });
     }
 
-    const daySchedules = new Map();
+    const daySchedules = new Map();//
     for (const [day, time] of Object.entries(schedules)) {
       if (time.startTime && time.endTime) {
         if (time.startTime >= time.endTime) {
@@ -25,7 +25,7 @@ const createSchedule = async (req, res) => {
           isActive: true
         });
       }
-    }
+    }//
 
     // Validate at least one day is selected
     if (daySchedules.size === 0) {
@@ -59,7 +59,7 @@ const createSchedule = async (req, res) => {
     res.status(500).json({ error: 'Server error while creating schedule' });
   }
 };
-
+//
 const getAllSchedulesByAdmin = async (req, res) => {
   try {
     const schedules = await Schedule.find()
